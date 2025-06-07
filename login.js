@@ -1,13 +1,15 @@
-
+import {firebaseConfig } from './api_key.js';
 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
 const btnLogin = document.querySelector('.btnLogin');
 const btnRegister = document.querySelector('.btnRegister');
+const btnGoogle = document.querySelector('.btnGoogle');
 
 btnLogin.addEventListener('click', login);
-btnRegister.addEventListener('click', register)
+btnRegister.addEventListener('click', register);
+btnGoogle.addEventListener('click', signInWithGoogle);
 
 
 
